@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/weather"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to JOoWick's weather app"
+        android:textSize="30sp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/LightBlue"
+        />
+
+    <EditText
+        android:id="@+id/addLocation"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:hint="Add location"
+        android:textColorHint="@color/DarkRed"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="190dp"
+        android:background="@color/LightBlue"
+        android:padding="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/CheckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addLocation"
+        android:text="Check the weather"
+        android:background="@color/LightBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        />
+
+
+</RelativeLayout>
